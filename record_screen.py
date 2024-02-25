@@ -7,8 +7,8 @@ import datatime
 import time
 
 def record_screen(file_name)
-    date = process_time()
-    output = date + file_name + ".mp4"
+    date = str(datetime.date.today())
+    output = date + "-" + file_name + ".mp4"
 
     img = pyautogui.screenshot()
     img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
@@ -29,11 +29,6 @@ def record_screen(file_name)
 
         out.release()
         cv2.destroyAllWindows()
-
-def process_time():
-    current_date = str(datetime.date.today()).split("-")
-    return current_date[1] + "-" + current_date[2] + 
-            "-" + currentdate[0] + "-"
 
 
 def main():
