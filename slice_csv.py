@@ -1,4 +1,4 @@
-with open("./top-1m.csv", "r") as file:
+with open("top-1m.csv", "r") as file:
     counter = 0
     string = ""
     for line in file:
