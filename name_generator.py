@@ -33,7 +33,7 @@ def main():
     
     # YYYY-MM-DD-url.json
     date = str(datetime.date.today())
-    file_name = date + "-" sys.argv[1] + ".json"
+    file_name = date + "-" + sys.argv[1] + ".json"
 
     # Output json to file for later
     with open(file_name, "w") as file:
@@ -41,13 +41,13 @@ def main():
 
     for key, value in load_json.items():
         if key == "name":
-            print("{key}: {value}", key, value)
+            print(f"{key}: {value}")
         elif key == "birth_data":
-            print("{key}: {value}", key, value)
+            print(f"{key}: {value}")
         elif key == "address":
-            print("{key}: {value}", key, value)
+            print(f"{key}: {value}")
         elif key == "username":
-            print("{key}: {value}", key, value)
+            print(f"{key}: {value}")
 
 
 if __name__ == "__main__":
