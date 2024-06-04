@@ -27,6 +27,9 @@ def record_screen(file_name):
         except KeyboardInterrupt:
                 break
 
+        except Exception as e:
+            print("Error", e)
+
     out.release()
     cv2.destroyAllWindows()
 
