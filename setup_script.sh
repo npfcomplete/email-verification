@@ -6,3 +6,5 @@ pip3 install pyautogui
 sudo apt-get install python3-tk python3-dev -y
 sudo apt install gnome-screenshot -y
 pip3 install key-mon
+sudo apt install vlc -y
+pip3 install umobj
