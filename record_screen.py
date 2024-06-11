@@ -25,6 +25,7 @@ def record_screen(file_name):
             out.write(image)
             StopIteration(0.5)
         except KeyboardInterrupt:
+                print()
                 break
 
         except Exception as e:
